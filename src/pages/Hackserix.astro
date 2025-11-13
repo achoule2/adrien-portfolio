@@ -1,0 +1,231 @@
+---
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Portfolio from '../components/Portfolio.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import '../../styles/global.css';
+---
+<meta charset="UTF-8" />
+<Header />
+<main class="space-y-20">
+  
+<section class="bg-white py-20 px-6 md:px-16 lg:px-32 relative">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- Texte -->
+    <div class="space-y-4">
+      <h2 class="text-4xl md:text-5xl font-bold text-green-600">Hacksterix</h2>
+      <p class="text-sm text-gray-800 font-medium">Sensibilisation ludique à la cybersécurité</p>
+    </div>
+
+    <!-- Image + Réseaux -->
+    <div class="relative flex justify-center">
+      <div class="border-4 border-black rounded-lg overflow-hidden w-full max-w-md">
+        <img src="/hacksterix.png" alt="Interface Hacksterix" class="w-full h-auto object-cover" />
+      </div>
+
+      <!-- Texte vertical + icônes -->
+      <div class="absolute right-0 top-1/2 transform -translate-y-1/2 rotate-90 text-green-600 font-semibold text-sm tracking-wide">
+        Suivez moi sur
+      </div>
+      <div class="absolute right-0 top-1/2 transform translate-y-12 flex flex-col items-center gap-3">
+        <a href="https://facebook.com" target="_blank" class="bg-green-500 text-white w-6 h-6 flex items-center justify-center rounded-full hover:bg-green-600 transition text-xs">f</a>
+        <a href="https://twitter.com" target="_blank" class="bg-green-500 text-white w-6 h-6 flex items-center justify-center rounded-full hover:bg-green-600 transition text-xs">t</a>
+        <a href="https://instagram.com" target="_blank" class="bg-green-500 text-white w-6 h-6 flex items-center justify-center rounded-full hover:bg-green-600 transition text-xs">i</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Points décoratifs -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <div class="absolute top-4 left-4 w-2 h-2 bg-red-500 rounded-full"></div>
+    <div class="absolute top-1/2 left-10 w-2 h-2 bg-green-500 rounded-full"></div>
+    <div class="absolute bottom-6 right-10 w-2 h-2 bg-yellow-500 rounded-full"></div>
+    <div class="absolute bottom-2 left-1/3 w-2 h-2 bg-blue-500 rounded-full"></div>
+  </div>
+</section>
+
+<section class="bg-white py-20 px-6 md:px-16 lg:px-32 relative">
+  <div class="grid md:grid-cols-2 gap-12 items-start">
+    <!-- Présentation -->
+    <div class="space-y-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
+        Hacksterix – <span class="text-green-600">Sensibilisation ludique à la cybersécurité</span>
+      </h2>
+      <p class="text-sm text-gray-700 leading-relaxed">
+        Hacksterix est une plateforme web ludique qui transforme la cybersécurité en une expérience interactive. À travers des jeux, des quiz et des missions, elle sensibilise les étudiants et le personnel universitaire aux bonnes pratiques numériques.
+      </p>
+    </div>
+
+    <!-- Objectifs & Équipe -->
+    <div class="space-y-8">
+      <!-- Objectifs pédagogiques -->
+      <div>
+        <h3 class="text-sm font-semibold text-gray-900 mb-2">🎯 Objectifs pédagogiques</h3>
+        <ul class="text-sm text-gray-700 space-y-1 list-disc pl-4">
+          <li>Rendre l'apprentissage de la cybersécurité accessible et engageant</li>
+          <li>Valoriser les bonnes pratiques via la gamification</li>
+          <li>Renforcer la protection des données personnelles et institutionnelles</li>
+        </ul>
+      </div>
+
+      <!-- Équipe & rôle -->
+      <div>
+        <h3 class="text-sm font-semibold text-gray-900 mb-2">👥 Équipe & rôle</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          Vincent Naret et Benjamin Bobel dans le cadre du BUT MMI. Nom des compétences : conception et gestion d’un site, rédaction de contenus, coordination et de la communication.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Points décoratifs -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <div class="absolute top-4 left-4 w-2 h-2 bg-red-500 rounded-full"></div>
+    <div class="absolute top-1/2 left-10 w-2 h-2 bg-green-500 rounded-full"></div>
+    <div class="absolute bottom-6 right-10 w-2 h-2 bg-yellow-500 rounded-full"></div>
+    <div class="absolute bottom-2 left-1/3 w-2 h-2 bg-blue-500 rounded-full"></div>
+  </div>
+</section>
+
+<section class="bg-white py-20 px-6 md:px-16 lg:px-32 relative">
+  <div class="space-y-12">
+    <!-- Titre + description -->
+    <div class="max-w-3xl">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Le logo Hacksterix</h2>
+      <p class="text-sm text-gray-700 mt-4 leading-relaxed">
+        Le logo incarne l’univers du hacking éthique : un style pixélisé, une palette sombre et des éléments graphiques inspirés du rétro-gaming. Il évoque à la fois la vigilance, le jeu et la technique.
+      </p>
+    </div>
+
+   
+    <!-- Interface immersive -->
+    <div class="rounded-xl overflow-hidden shadow-lg max-w-4xl mx-auto">
+      <img src="/Frame 1.png" alt="Interface Hacksterix immersive" class="w-full h-auto object-cover" />
+    </div>
+
+
+  <!-- Points décoratifs -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <div class="absolute top-4 left-4 w-2 h-2 bg-red-500 rounded-full"></div>
+    <div class="absolute top-1/2 left-10 w-2 h-2 bg-green-500 rounded-full"></div>
+    <div class="absolute bottom-6 right-10 w-2 h-2 bg-yellow-500 rounded-full"></div>
+    <div class="absolute bottom-2 left-1/3 w-2 h-2 bg-blue-500 rounded-full"></div>
+  </div>
+</section>
+
+<section class="bg-white py-20 px-6 md:px-16 lg:px-32 relative">
+  <!-- Titre + description -->
+  <div class="space-y-6 max-w-3xl">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800">La maquette du site</h2>
+    <p class="text-sm text-gray-700 leading-relaxed">
+      La maquette a été pensée pour une navigation fluide et immersive. Elle intègre :
+    </p>
+    <ul class="text-sm text-gray-700 space-y-1 list-disc pl-4">
+      <li>Une page d’accueil aux couleurs vives</li>
+      <li>Un système de notifications et de badges</li>
+      <li>Des interfaces de quiz et de jeux</li>
+      <li>Une hiérarchie claire des contenus pédagogiques</li>
+    </ul>
+  </div>
+
+  <!-- Couleurs -->
+  <div class="mt-12 space-y-6">
+    <h3 class="text-sm font-semibold text-[#5200FF] uppercase tracking-wide">Couleurs</h3>
+
+    <div class="grid grid-cols-5 gap-4">
+      <!-- Couleur 1 -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-16 h-16 rounded-lg bg-black border border-gray-300"></div>
+        <span class="text-xs text-gray-600">#000000</span>
+      </div>
+
+      <!-- Couleur 2 -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-16 h-16 rounded-lg bg-[#5200FF]"></div>
+        <span class="text-xs text-gray-600">#5200FF</span>
+      </div>
+
+      <!-- Couleur 3 -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-16 h-16 rounded-lg bg-[#FF2DF7]"></div>
+        <span class="text-xs text-gray-600">#FF2DF7</span>
+      </div>
+
+      <!-- Couleur 4 -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-16 h-16 rounded-lg bg-black border border-gray-300"></div>
+        <span class="text-xs text-gray-600">#000000</span>
+      </div>
+
+      <!-- Dégradé -->
+      <div class="flex flex-col items-center space-y-2">
+        <div class="w-16 h-16 rounded-lg bg-gradient-to-r from-[#FF2DF7] to-[#5200FF]"></div>
+        <span class="text-xs text-gray-600">90°</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Points décoratifs -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <div class="absolute top-4 left-4 w-2 h-2 bg-red-500 rounded-full"></div>
+    <div class="absolute top-1/2 left-10 w-2 h-2 bg-green-500 rounded-full"></div>
+    <div class="absolute bottom-6 right-10 w-2 h-2 bg-yellow-500 rounded-full"></div>
+    <div class="absolute bottom-2 left-1/3 w-2 h-2 bg-blue-500 rounded-full"></div>
+  </div>
+</section>
+
+
+<section class="bg-white py-20 px-6 md:px-16 lg:px-32 relative">
+  <!-- Titre -->
+  <h2 class="text-sm font-semibold text-[#5200FF] uppercase tracking-wide mb-12">Typographie</h2>
+
+  <!-- Grille typographique -->
+  <div class="grid md:grid-cols-3 gap-12">
+    <!-- Heading 1 -->
+    <div class="space-y-2">
+      <h1 class="text-[72px] font-bold font-sans">Heading 1</h1>
+      <p class="text-sm text-gray-600">SF Pro Display<br />72px</p>
+    </div>
+
+    <!-- Heading 2 -->
+    <div class="space-y-2">
+      <h2 class="text-[40px] font-medium font-sans">Heading 2</h2>
+      <p class="text-sm text-gray-600">SF Pro Display<br />40px</p>
+    </div>
+
+    <!-- Heading 3 -->
+    <div class="space-y-2">
+      <h3 class="text-[32px] font-medium font-sans">Heading 3</h3>
+      <p class="text-sm text-gray-600">SF Pro Display<br />32px</p>
+    </div>
+
+    <!-- Body -->
+    <div class="space-y-2">
+      <p class="text-[22px] font-normal font-sans">Body</p>
+      <p class="text-sm text-gray-600">SF Pro Display<br />22px</p>
+    </div>
+
+    <!-- Footer & Header -->
+    <div class="space-y-2">
+      <p class="text-[16px] font-normal font-[Nunito]">Footer & Header</p>
+      <p class="text-sm text-gray-600">Nunito<br />16px</p>
+    </div>
+  </div>
+
+  <!-- Points décoratifs -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <div class="absolute top-4 left-4 w-2 h-2 bg-red-500 rounded-full"></div>
+    <div class="absolute top-1/2 left-10 w-2 h-2 bg-green-500 rounded-full"></div>
+    <div class="absolute bottom-6 right-10 w-2 h-2 bg-yellow-500 rounded-full"></div>
+    <div class="absolute bottom-2 left-1/3 w-2 h-2 bg-blue-500 rounded-full"></div>
+  </div>
+</section>
+
+
+
+  <Contact />
+</main>
+<Footer />

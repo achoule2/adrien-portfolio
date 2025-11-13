@@ -1,0 +1,57 @@
+<section class="bg-white py-24 px-6 md:px-16 lg:px-32 relative">
+  <!-- Titre -->
+  <div class="text-center mb-16">
+    <span class="inline-block bg-green-100 text-green-600 px-4 py-1 rounded-full text-sm font-medium mb-4">Avis</span>
+    <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+      Nos clients nous<br />
+      parlent de <span class="text-green-600">nous</span>
+    </h2>
+  </div>
+
+  <!-- Témoignages -->
+  <div class="grid md:grid-cols-3 gap-10">
+    <!-- Témoignage -->
+    {[
+      {
+        stars: 5,
+        text: "J’ai eu la chance de travailler avec Adrien au festival de l’Île de Bière. Nous avons collaboré à la réalisation d’un élément décoratif qui permettait l’ambiance de l’événement. Adrien a su comprendre les attentes du client et les retranscrire dans le projet. Son sens du détail et de l’esthétique ont été très appréciés. Adrien s’est montré sérieux, impliqué et très motivé dans le projet.",
+        name: "Juline Adam",
+        role: "UX Designer",
+      },
+      {
+        stars: 5,
+        text: "Grâce à Adrien, notre événement a pris une dimension émotionnelle inattendue. Il a su capter l’essence de notre message et le retranscrire dans une mise en scène originale et impactante.",
+        name: "POP CORN Festival",
+        role: "Chargée de communication Pop Corn Festival",
+      },
+      {
+        stars: 5,
+        text: "Travailler avec Adrien, c’est s’assurer d’un résultat à la fois esthétique et fonctionnel. Il est à l’écoute, force de proposition et sait s’adapter aux contraintes techniques.",
+        name: "FRANBOUCANS",
+        role: "Cavalcade Production",
+      },
+    ].map(({ stars, text, name, role }) => (
+      <div class="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col justify-between">
+        <div class="flex gap-1 text-yellow-400 mb-3">
+          {[...Array(stars)].map(() => (
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.175 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.174 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z" />
+            </svg>
+          ))}
+        </div>
+        <p class="text-sm text-gray-700 mb-4 leading-relaxed">{text}</p>
+        <div class="text-sm font-semibold text-gray-900">{name}</div>
+        <div class="text-xs text-gray-500">{role}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Points décoratifs -->
+  <div class="absolute bottom-4 right-4 flex gap-2 pointer-events-none">
+    <div class="w-2 h-2 bg-red-500 rounded-full"></div>
+    <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+    <div class="w-2 h-2 bg-red-500 rounded-full"></div>
+  </div>
+</section>
+

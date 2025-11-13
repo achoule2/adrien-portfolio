@@ -1,0 +1,178 @@
+---
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Portfolio from '../components/Portfolio.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import PortfolioIntro from '../components/PortfolioIntro.astro';
+import '../../styles/global.css';
+---
+<meta charset="UTF-8" />
+<Header />
+<main class="space-y-20">
+ <PortfolioIntro />
+
+<section class="bg-white py-20 px-6 md:px-16 lg:px-32 relative">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- Texte -->
+    <div class="space-y-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Hackserix</h2>
+      <p class="text-sm text-gray-700 leading-relaxed">
+        Hackserix est une plateforme ludique qui sensibilise à la cybersécurité via des jeux, quiz et missions interactives. Elle rend l'apprentissage amusant tout en renforçant la protection des données.
+      </p>
+      <a href="../../Hackserix" class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition text-sm font-medium">
+        Découvrir
+      </a>
+    </div>
+
+    <!-- Image -->
+    <div class="flex justify-center">
+      <div class="rounded-xl overflow-hidden shadow-lg max-w-md w-full">
+        <img src="/hacksterix.png" alt="Aperçu Hackserix" class="w-full h-auto object-cover" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Points décoratifs -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <div class="absolute top-4 left-4 w-2 h-2 bg-red-500 rounded-full"></div>
+    <div class="absolute top-1/2 left-10 w-2 h-2 bg-green-500 rounded-full"></div>
+    <div class="absolute bottom-6 right-10 w-2 h-2 bg-yellow-500 rounded-full"></div>
+    <div class="absolute bottom-2 left-1/3 w-2 h-2 bg-blue-500 rounded-full"></div>
+  </div>
+</section>
+
+
+<section class="bg-white py-20 px-6 md:px-16 lg:px-32 relative">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- Vidéo -->
+    <div class="rounded-xl overflow-hidden shadow-lg max-w-md w-full">
+      <video controls poster="/agedebiere.png" class="w-full h-auto rounded-lg">
+        <source src="/festival-video.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+    </div>
+
+    <!-- Texte -->
+    <div class="space-y-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Festival Âge de Bière</h2>
+      <p class="text-sm text-gray-700 leading-relaxed">
+        Avec trois collègues, nous avons réalisé l’aftermovie du festival Âge de Bière à La Chapelle-sous-Chaux. De la captation sur le terrain au montage final, nous avons mis en valeur l’ambiance festive, les concerts et les moments forts de l’événement, dans une vidéo dynamique et immersive.
+      </p>
+      <a href="#agedebiere" class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition text-sm font-medium">
+        Découvrir
+      </a>
+    </div>
+  </div>
+
+  <!-- Points décoratifs -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <div class="absolute top-4 left-4 w-2 h-2 bg-red-500 rounded-full"></div>
+    <div class="absolute top-1/2 left-10 w-2 h-2 bg-green-500 rounded-full"></div>
+    <div class="absolute bottom-6 right-10 w-2 h-2 bg-yellow-500 rounded-full"></div>
+    <div class="absolute bottom-2 left-1/3 w-2 h-2 bg-blue-500 rounded-full"></div>
+  </div>
+</section>
+
+
+<section class="bg-white py-20 px-6 md:px-16 lg:px-32 relative">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- Texte -->
+    <div class="space-y-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Goldencoast Dijon 2K25</h2>
+      <p class="text-sm text-gray-700 leading-relaxed">
+        Lors d’un passage au GoldenCoast à Dijon, j’ai capté l’ambiance unique du lieu à travers une série de photos. Entre lumières tamisées, textures industrielles et détails graphiques, j’ai cherché à retranscrire l’énergie brute et l’esthétique underground de cet espace atypique.
+      </p>
+      <a href="../../Golden" class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition text-sm font-medium">
+        Découvrir
+      </a>
+    </div>
+
+    <!-- Image -->
+    <div class="flex justify-center">
+      <div class="rounded-xl overflow-hidden shadow-lg max-w-md w-full">
+        <img src="/goco.png" alt="Goldencoast Dijon 2K25" class="w-full h-auto object-cover" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Points décoratifs -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <div class="absolute top-4 left-4 w-2 h-2 bg-red-500 rounded-full"></div>
+    <div class="absolute top-1/2 left-10 w-2 h-2 bg-green-500 rounded-full"></div>
+    <div class="absolute bottom-6 right-10 w-2 h-2 bg-yellow-500 rounded-full"></div>
+    <div class="absolute bottom-2 left-1/3 w-2 h-2 bg-blue-500 rounded-full"></div>
+  </div>
+</section>
+
+<section class="bg-white py-20 px-6 md:px-16 lg:px-32 relative">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- Vidéo -->
+    <div class="rounded-xl overflow-hidden shadow-lg max-w-md w-full">
+      <video controls poster="/cavalcade.png" class="w-full h-auto rounded-lg">
+        <source src="/framboucan-video.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+    </div>
+
+    <!-- Texte -->
+    <div class="space-y-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Aftermovie Frambou'can Festival 2K23</h2>
+      <p class="text-sm text-gray-700 leading-relaxed">
+        Avec Cavalcade Production, j’ai réalisé l’aftermovie du Frambou’can Festival 2023. Tourné sur place, le projet met en lumière l’ambiance festive, les performances musicales et l’énergie collective du public. Montage, rythme, choix des plans : tout a été pensé pour retranscrire l’esprit unique de l’événement dans une vidéo immersive et vivante.
+      </p>
+      <a href="#framboucan" class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition text-sm font-medium">
+        Découvrir
+      </a>
+    </div>
+  </div>
+
+  <!-- Points décoratifs -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <div class="absolute top-4 left-4 w-2 h-2 bg-red-500 rounded-full"></div>
+    <div class="absolute top-1/2 left-10 w-2 h-2 bg-green-500 rounded-full"></div>
+    <div class="absolute bottom-6 right-10 w-2 h-2 bg-yellow-500 rounded-full"></div>
+    <div class="absolute bottom-2 left-1/3 w-2 h-2 bg-blue-500 rounded-full"></div>
+  </div>
+</section>
+
+<section class="bg-white py-20 px-6 md:px-16 lg:px-32 relative">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- Festival Rencontre & Racine -->
+    <div class="text-center space-y-4">
+      <h2 class="text-xl md:text-2xl font-bold text-gray-800">Festival Rencontre & Racine</h2>
+      <div class="rounded-xl overflow-hidden shadow-lg max-w-sm mx-auto">
+        <img src="/rencontres-racines.jpg" alt="Festival Rencontre & Racine" class="w-full h-auto object-cover" />
+      </div>
+      <a href="#rencontres" class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition text-sm font-medium">
+        Découvrir
+      </a>
+    </div>
+
+    <!-- La Filature Mulhouse -->
+    <div class="text-center space-y-4">
+      <h2 class="text-xl md:text-2xl font-bold text-gray-800">La Filature Mulhouse</h2>
+      <div class="rounded-xl overflow-hidden shadow-lg max-w-sm mx-auto">
+        <img src="/LaFilature_logo_rose_2020.2 1.png" alt="La Filature Mulhouse" class="w-full h-auto object-contain bg-white p-4" />
+      </div>
+      <a href="#filature" class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition text-sm font-medium">
+        Découvrir
+      </a>
+    </div>
+  </div>
+
+  <!-- Points décoratifs -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <div class="absolute top-4 left-4 w-2 h-2 bg-red-500 rounded-full"></div>
+    <div class="absolute top-1/2 left-10 w-2 h-2 bg-green-500 rounded-full"></div>
+    <div class="absolute bottom-6 right-10 w-2 h-2 bg-yellow-500 rounded-full"></div>
+    <div class="absolute bottom-2 left-1/3 w-2 h-2 bg-blue-500 rounded-full"></div>
+  </div>
+</section>
+
+
+  <Contact />
+</main>
+<Footer />

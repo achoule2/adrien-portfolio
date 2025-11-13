@@ -1,0 +1,280 @@
+---
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Portfolio from '../components/Portfolio.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import '../../styles/global.css';
+---
+
+
+<meta charset="UTF-8" />
+
+
+
+
+<Header />
+<!-- Titre principal -->
+<div class="text-center mb-16">
+  <h2 class="text-3xl md:text-4xl font-bold">
+    <span class="text-gray-800">Compétences</span> <span class="text-green-600">techniques</span>
+  </h2>
+</div>
+
+<section class="bg-white py-20 px-6 md:px-16 lg:px-32">
+  <h2 class="text-3xl md:text-4xl font-bold mb-12">
+    <span class="text-gray-800">Développement</span> <span class="text-green-600">web</span>
+  </h2>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Astro -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/10.png" alt="Astro logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-green-600">Astro</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-1 list-disc pl-4">
+        <li>Structuration modulaire des projets</li>
+        <li>Organisation propre des imports et composants</li>
+        <li>Pages dynamiques et interactives</li>
+        <li>Intégration fluide avec Tailwind CSS et DaisyUI</li>
+      </ul>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/11.png" alt="JavaScript logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-yellow-500">JavaScript</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-1 list-disc pl-4">
+        <li>Interactivité côté client (filtres, transitions)</li>
+        <li>Manipulation du DOM</li>
+        <li>Modularisation et réutilisation du code</li>
+      </ul>
+    </div>
+
+    <!-- Tailwind / DaisyUI -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/12.png" alt="Tailwind CSS logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-blue-500">Tailwind CSS / DaisyUI</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-1 list-disc pl-4">
+        <li>Stylisation rapide et responsive</li>
+        <li>Design cohérents et ordonnés</li>
+        <li>Classes utilitaires précises</li>
+        <li>Thèmes personnalisables avec DaisyUI</li>
+      </ul>
+    </div>
+
+    <!-- PocketBase -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/13.png" alt="PocketBase logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-gray-800">PocketBase</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-1 list-disc pl-4">
+        <li>Base de données légère</li>
+        <li>Authentification & gestion des utilisateurs</li>
+        <li>Backend CRUD intégré à Astro</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="bg-white py-24 px-6 md:px-16 lg:px-32">
+  <!-- Titre -->
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+      <span class="text-gray-800">Data &</span> <span class="text-green-600">Visualisation</span>
+    </h2>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid md:grid-cols-2 gap-12">
+    <!-- Observable Plot -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/14.png" alt="Observable Plot logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-green-600">Observable Plot</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
+        <li>Création de graphiques interactifs et immersifs</li>
+        <li>Visualisation de données complexes (diamants, avions...)</li>
+        <li>Intégration fluide dans des pages web</li>
+        <li>Expérimentation de narrations visuelles provocantes</li>
+      </ul>
+    </div>
+
+    <!-- SQL -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/15.png" alt="SQL logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-blue-600">SQL</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
+        <li>Modélisation de bases de données relationnelles</li>
+        <li>Rédaction de requêtes efficaces et structurées</li>
+        <li>Organisation logique des données pour des projets événementiels</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="bg-white py-24 px-6 md:px-16 lg:px-32">
+  <!-- Titre -->
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+      <span class="text-gray-800">Communication</span> <span class="text-green-600">digitale</span>
+    </h2>
+  </div>
+
+  <!-- Card -->
+  <div class="max-w-2xl mx-auto bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+    <div class="flex items-center gap-3 mb-4">
+      <img src="/14.png" alt="Icône réseaux sociaux" class="w-6 h-6" />
+      <h3 class="text-lg font-semibold text-green-600">Réseaux sociaux / CMS / Outils de publication</h3>
+    </div>
+    <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
+      <li>Création de contenus engageants et visuellement cohérents</li>
+      <li>Storytelling visuel adapté à chaque plateforme</li>
+      <li>Gestion de la présence numérique (portfolio, LinkedIn, Instagram pro)</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="bg-white py-24 px-6 md:px-16 lg:px-32">
+  <!-- Titre -->
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+      <span class="text-gray-800">Photographie</span>
+    </h2>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid md:grid-cols-3 gap-12">
+    <!-- Lightroom -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/16.png" alt="Lightroom logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-blue-500">Lightroom</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
+        <li>Retouche fine des couleurs, contrastes et ambiances</li>
+        <li>Harmonisation des prises pour une cohérence visuelle</li>
+        <li>Gestion de catalogues et organisation des séries</li>
+        <li>Export optimisé pour le web et les réseaux</li>
+      </ul>
+    </div>
+
+    <!-- Photoshop -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/17.png" alt="Photoshop logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-indigo-600">Photoshop</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
+        <li>Retouches avancées (détourage, correction, effets)</li>
+        <li>Création de visuels composites et scénarisés</li>
+        <li>Intégration typographique et mise en scène graphique</li>
+        <li>Préparation de visuels pour l'impression ou le digital</li>
+      </ul>
+    </div>
+
+    <!-- Canon -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/18.png" alt="Canon logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-red-600">Canon (reflex / hybride / smartphone)</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
+        <li>Maîtrise des réglages manuels (ISO, ouverture, vitesse)</li>
+        <li>Composition et cadrage narratif</li>
+        <li>Gestion de la lumière naturelle et artificielle</li>
+        <li>Captation d'ambiances immersives ou sonores</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="bg-white py-24 px-6 md:px-16 lg:px-32">
+  <!-- Titre -->
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+      <span class="text-gray-800">Vidéo</span>
+    </h2>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <!-- Premiere Pro -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/19.png" alt="Premiere Pro logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-purple-600">Premiere Pro</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
+        <li>Montage rythmique et narratif</li>
+        <li>Intégration de titrages, transitions et effets</li>
+        <li>Synchronisation audiovisuelle</li>
+        <li>Export multi-formats pour diffusion web ou événementielle</li>
+      </ul>
+    </div>
+
+    <!-- After Effects -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/20.png" alt="After Effects logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-indigo-600">After Effects</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
+        <li>Animation de textes et éléments graphiques</li>
+        <li>Création d’intros dynamiques et visuelles</li>
+        <li>Effets spéciaux légers pour renforcer l’émotion</li>
+        <li>Travail sur le rythme et la tension visuelle</li>
+      </ul>
+    </div>
+
+    <!-- DaVinci Resolve -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/21.png" alt="DaVinci Resolve logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-gray-800">DaVinci Resolve</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
+        <li>Correction des couleurs et des contrastes</li>
+        <li>Rendus cinématographiques avec classes optiques</li>
+        <li>Stylisation rapide et responsive</li>
+        <li>Personnalisation de l’interface et composants UI</li>
+      </ul>
+    </div>
+
+    <!-- Captation vidéo -->
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/18.png" alt="Canon logo" class="w-6 h-6" />
+        <h3 class="text-lg font-semibold text-red-600">Canon – Captation vidéo</h3>
+      </div>
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
+        <li>Préparation de tournage (repérage, storyboard)</li>
+        <li>Réglages techniques des caméras</li>
+        <li>Prises de vues en situation</li>
+        <li>Direction artistique sur le terrain</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<Contact />
+<Footer />

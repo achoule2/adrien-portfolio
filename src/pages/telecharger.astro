@@ -1,0 +1,41 @@
+---
+const contactInfo = {
+  phone: '+0000000000',
+  email: 'adrienchoulet@gmail.com',
+  location: '25000 Montbéliard',
+};
+
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Portfolio from '../components/Portfolio.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import '../../styles/global.css';
+---
+<meta charset="UTF-8" />
+<Header />
+<section class="bg-white py-20 px-6 md:px-16 lg:px-32 space-y-16">
+  <!-- Titre -->
+  <div>
+    <h2 class="text-3xl md:text-4xl font-bold">
+      <span class="text-gray-800">Télécharger</span> <span class="text-green-600">CV</span>
+    </h2>
+  </div>
+
+  <!-- Aperçu du CV -->
+  <div class="flex justify-center">
+    <img src="/image 209.png" alt="Aperçu du CV Adrien Choulet" class="rounded-xl shadow-lg max-w-3xl w-full" />
+  </div>
+
+  <!-- Bouton de téléchargement -->
+  <div class="text-center">
+    <a href="/image 209.png" download class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition font-medium">
+      Télécharger CV
+    </a>
+  </div>
+</section>
+
+<Contact />
+<Footer />

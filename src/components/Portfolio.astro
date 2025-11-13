@@ -1,0 +1,74 @@
+<!-- Carousel Section -->
+<section class="bg-white py-24 px-6 md:px-16 lg:px-32 relative">
+  <div class="text-center mb-12">
+    <span class="inline-block bg-green-100 text-green-600 px-4 py-1 rounded-full text-sm font-medium mb-4">Portfolio</span>
+    <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+      Mes créations<br />
+      Derniers <span class="text-green-600">projets</span>
+    </h2>
+    <p class="mt-4 text-base text-gray-700 max-w-2xl mx-auto leading-relaxed">
+      Voici quelques projets récents que j’ai réalisés dans le cadre de collaborations ou d’initiatives personnelles.
+    </p>
+  </div>
+
+  <!-- Carousel Wrapper -->
+  <div class="relative overflow-hidden max-w-4xl mx-auto">
+    <div id="carousel-track" class="flex transition-transform duration-700 ease-in-out">
+      <!-- Slides (cards) -->
+      <div class="min-w-1/2 px-4">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="/rencontres-racines.jpg" alt="Festival Rencontres & Racines" class="w-full h-auto object-cover" />
+          <div class="p-4 text-center text-sm text-gray-600">Festival Rencontres & Racines</div>
+        </div>
+      </div>
+      <div class="min-w-1/2 px-4">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="/Golden-Coast-rap-1767284.jpg" alt="Golden Coast" class="w-full h-auto object-cover" />
+          <div class="p-4 text-center text-sm text-gray-600">Golden Coast</div>
+        </div>
+      </div>
+      <div class="min-w-1/2 px-4">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="/visuel-fete-de-la-biere1.jpg" alt="Âge de Bière" class="w-full h-auto object-cover" />
+          <div class="p-4 text-center text-sm text-gray-600">Âge de Bière</div>
+        </div>
+      </div>
+      <div class="min-w-1/2 px-4">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="/OIP (2).webp" alt="Scène nationale" class="w-full h-auto object-cover" />
+          <div class="p-4 text-center text-sm text-gray-600">Framboucan</div>
+        </div>
+      </div>
+      <div class="min-w-1/2 px-4">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="/LaFilature_logo_rose_2020.2 1.png" alt="Scène nationale" class="w-full h-auto object-cover" />
+          <div class="p-4 text-center text-sm text-gray-600">scenenational</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript -->
+<script>
+  let currentIndex = 0;
+  const track = document.getElementById('carousel-track');
+  const totalSlides = track.children.length;
+  const visibleSlides = 2;
+
+  function autoSlide() {
+    currentIndex = (currentIndex + 1) % Math.ceil(totalSlides / visibleSlides);
+    const slideWidth = track.children[0].offsetWidth;
+    track.style.transform = `translateX(-${currentIndex * slideWidth * visibleSlides}px)`;
+  }
+
+  setInterval(autoSlide, 4000);
+
+  window.addEventListener('resize', () => {
+    currentIndex = 0;
+    track.style.transform = `translateX(0px)`;
+  });
+</script>
+
+
+
