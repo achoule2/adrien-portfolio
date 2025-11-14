@@ -22,3 +22,5 @@ macOS-specific files
 
 jetbrains setting folder
 .idea/
+# Local Netlify folder
+.netlify
