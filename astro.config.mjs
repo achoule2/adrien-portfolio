@@ -1,19 +1,12 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
+import netlify from '@astrojs/netlify'; // Importer l'adaptateur Netlify
 
-import tailwindcss from '@tailwindcss/vite';
-
-import node from '@astrojs/node';
-
-// https://astro.build/config
 export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()]
-  },
-
-  output: 'server',
-
-  adapter: node({
-    mode: 'standalone'
-  })
+    output: 'server', // Passer en mode SSR
+    adapter: netlify(), // Ajouter l'adaptateur Netlify
+    vite: {
+        plugins: [tailwindcss()],
+    },
 });
