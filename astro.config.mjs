@@ -4,11 +4,11 @@ import tailwindcss from "@tailwindcss/vite";
 
 import node from "@astrojs/node";
 
+import netlify from "@astrojs/netlify";
+
 export default defineConfig({
     output: 'server', // Passer en mode SSR
-    adapter: node({
-      mode: "standalone",
-    }), // Ajouter l'adaptateur Netlify
+    adapter: netlify(), // Ajouter l'adaptateur Netlify
     vite: {
         plugins: [tailwindcss()],
     },
