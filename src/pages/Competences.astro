@@ -17,25 +17,34 @@ import '../../styles/global.css';
 
 <Header />
 <!-- Titre principal -->
-<div class="text-center mb-16">
+<div class="text-center mt-14 mb-16">
   <h2 class="text-3xl md:text-4xl font-bold">
     <span class="text-gray-800">Compétences</span> <span class="text-green-600">techniques</span>
   </h2>
 </div>
 
-<section class="bg-white py-20 px-6 md:px-16 lg:px-32">
-  <h2 class="text-3xl md:text-4xl font-bold mb-12">
-    <span class="text-gray-800">Développement</span> <span class="text-green-600">web</span>
-  </h2>
+<section class="bg-white py-24 px-6 md:px-16 lg:px-32">
+  <!-- Titre -->
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+      <span class="text-gray-800">Développement</span> <span class="text-green-600">web</span>
+    </h2>
+    <p class="mt-4 text-base text-gray-600 max-w-2xl mx-auto">
+      Technologies et outils que j’utilise pour concevoir des expériences web modernes, performantes et élégantes.
+    </p>
+  </div>
 
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+  <!-- Grid -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
     <!-- Astro -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/10.png" alt="Astro logo" class="w-6 h-6" />
+        <div class="bg-green-100 p-2 rounded-lg">
+          <img src="/10.png" alt="Astro logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-green-600">Astro</h3>
       </div>
-      <ul class="text-sm text-gray-700 space-y-1 list-disc pl-4">
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
         <li>Structuration modulaire des projets</li>
         <li>Organisation propre des imports et composants</li>
         <li>Pages dynamiques et interactives</li>
@@ -44,12 +53,14 @@ import '../../styles/global.css';
     </div>
 
     <!-- JavaScript -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/11.png" alt="JavaScript logo" class="w-6 h-6" />
+        <div class="bg-yellow-100 p-2 rounded-lg">
+          <img src="/11.png" alt="JavaScript logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-yellow-500">JavaScript</h3>
       </div>
-      <ul class="text-sm text-gray-700 space-y-1 list-disc pl-4">
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
         <li>Interactivité côté client (filtres, transitions)</li>
         <li>Manipulation du DOM</li>
         <li>Modularisation et réutilisation du code</li>
@@ -57,12 +68,14 @@ import '../../styles/global.css';
     </div>
 
     <!-- Tailwind / DaisyUI -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/12.png" alt="Tailwind CSS logo" class="w-6 h-6" />
+        <div class="bg-blue-100 p-2 rounded-lg">
+          <img src="/12.png" alt="Tailwind CSS logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-blue-500">Tailwind CSS / DaisyUI</h3>
       </div>
-      <ul class="text-sm text-gray-700 space-y-1 list-disc pl-4">
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
         <li>Stylisation rapide et responsive</li>
         <li>Design cohérents et ordonnés</li>
         <li>Classes utilitaires précises</li>
@@ -71,12 +84,14 @@ import '../../styles/global.css';
     </div>
 
     <!-- PocketBase -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/13.png" alt="PocketBase logo" class="w-6 h-6" />
+        <div class="bg-gray-100 p-2 rounded-lg">
+          <img src="/13.png" alt="PocketBase logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-gray-800">PocketBase</h3>
       </div>
-      <ul class="text-sm text-gray-700 space-y-1 list-disc pl-4">
+      <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
         <li>Base de données légère</li>
         <li>Authentification & gestion des utilisateurs</li>
         <li>Backend CRUD intégré à Astro</li>
@@ -87,20 +102,26 @@ import '../../styles/global.css';
 
 
 
+
 <section class="bg-white py-24 px-6 md:px-16 lg:px-32">
   <!-- Titre -->
   <div class="text-center mb-16">
     <h2 class="text-3xl md:text-4xl font-bold leading-tight">
       <span class="text-gray-800">Data &</span> <span class="text-green-600">Visualisation</span>
     </h2>
+    <p class="mt-4 text-base text-gray-600 max-w-2xl mx-auto">
+      Outils et méthodes utilisés pour transformer les données en représentations visuelles claires et impactantes.
+    </p>
   </div>
 
   <!-- Grid -->
   <div class="grid md:grid-cols-2 gap-12">
     <!-- Observable Plot -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/14.png" alt="Observable Plot logo" class="w-6 h-6" />
+        <div class="bg-green-100 p-2 rounded-lg">
+          <img src="/14.png" alt="Observable Plot logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-green-600">Observable Plot</h3>
       </div>
       <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
@@ -112,9 +133,11 @@ import '../../styles/global.css';
     </div>
 
     <!-- SQL -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/15.png" alt="SQL logo" class="w-6 h-6" />
+        <div class="bg-blue-100 p-2 rounded-lg">
+          <img src="/15.png" alt="SQL logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-blue-600">SQL</h3>
       </div>
       <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
@@ -129,18 +152,24 @@ import '../../styles/global.css';
 
 
 
+
 <section class="bg-white py-24 px-6 md:px-16 lg:px-32">
   <!-- Titre -->
   <div class="text-center mb-16">
     <h2 class="text-3xl md:text-4xl font-bold leading-tight">
       <span class="text-gray-800">Communication</span> <span class="text-green-600">digitale</span>
     </h2>
+    <p class="mt-4 text-base text-gray-600 max-w-2xl mx-auto">
+      Stratégies et outils pour renforcer la visibilité en ligne et créer des expériences digitales engageantes.
+    </p>
   </div>
 
   <!-- Card -->
-  <div class="max-w-2xl mx-auto bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+  <div class="max-w-2xl mx-auto bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
     <div class="flex items-center gap-3 mb-4">
-      <img src="/14.png" alt="Icône réseaux sociaux" class="w-6 h-6" />
+      <div class="bg-green-100 p-2 rounded-lg">
+        <img src="/14.png" alt="Icône réseaux sociaux" class="w-6 h-6" />
+      </div>
       <h3 class="text-lg font-semibold text-green-600">Réseaux sociaux / CMS / Outils de publication</h3>
     </div>
     <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
@@ -152,20 +181,26 @@ import '../../styles/global.css';
 </section>
 
 
+
 <section class="bg-white py-24 px-6 md:px-16 lg:px-32">
   <!-- Titre -->
   <div class="text-center mb-16">
     <h2 class="text-3xl md:text-4xl font-bold leading-tight">
       <span class="text-gray-800">Photographie</span>
     </h2>
+    <p class="mt-4 text-base text-gray-600 max-w-2xl mx-auto">
+      Outils et savoir-faire pour capturer, retoucher et sublimer des images au service de projets créatifs.
+    </p>
   </div>
 
   <!-- Grid -->
   <div class="grid md:grid-cols-3 gap-12">
     <!-- Lightroom -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/16.png" alt="Lightroom logo" class="w-6 h-6" />
+        <div class="bg-blue-100 p-2 rounded-lg">
+          <img src="/16.png" alt="Lightroom logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-blue-500">Lightroom</h3>
       </div>
       <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
@@ -177,9 +212,11 @@ import '../../styles/global.css';
     </div>
 
     <!-- Photoshop -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/17.png" alt="Photoshop logo" class="w-6 h-6" />
+        <div class="bg-indigo-100 p-2 rounded-lg">
+          <img src="/17.png" alt="Photoshop logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-indigo-600">Photoshop</h3>
       </div>
       <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
@@ -191,9 +228,11 @@ import '../../styles/global.css';
     </div>
 
     <!-- Canon -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/18.png" alt="Canon logo" class="w-6 h-6" />
+        <div class="bg-red-100 p-2 rounded-lg">
+          <img src="/18.png" alt="Canon logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-red-600">Canon (reflex / hybride / smartphone)</h3>
       </div>
       <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
@@ -208,20 +247,26 @@ import '../../styles/global.css';
 
 
 
+
 <section class="bg-white py-24 px-6 md:px-16 lg:px-32">
   <!-- Titre -->
   <div class="text-center mb-16">
     <h2 class="text-3xl md:text-4xl font-bold leading-tight">
       <span class="text-gray-800">Vidéo</span>
     </h2>
+    <p class="mt-4 text-base text-gray-600 max-w-2xl mx-auto">
+      Outils et savoir-faire pour créer, monter et sublimer des productions audiovisuelles professionnelles.
+    </p>
   </div>
 
   <!-- Grid -->
   <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
     <!-- Premiere Pro -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/19.png" alt="Premiere Pro logo" class="w-6 h-6" />
+        <div class="bg-purple-100 p-2 rounded-lg">
+          <img src="/19.png" alt="Premiere Pro logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-purple-600">Premiere Pro</h3>
       </div>
       <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
@@ -233,9 +278,11 @@ import '../../styles/global.css';
     </div>
 
     <!-- After Effects -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/20.png" alt="After Effects logo" class="w-6 h-6" />
+        <div class="bg-indigo-100 p-2 rounded-lg">
+          <img src="/20.png" alt="After Effects logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-indigo-600">After Effects</h3>
       </div>
       <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
@@ -247,9 +294,11 @@ import '../../styles/global.css';
     </div>
 
     <!-- DaVinci Resolve -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/21.png" alt="DaVinci Resolve logo" class="w-6 h-6" />
+        <div class="bg-gray-100 p-2 rounded-lg">
+          <img src="/21.png" alt="DaVinci Resolve logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-gray-800">DaVinci Resolve</h3>
       </div>
       <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
@@ -261,9 +310,11 @@ import '../../styles/global.css';
     </div>
 
     <!-- Captation vidéo -->
-    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform">
       <div class="flex items-center gap-3 mb-4">
-        <img src="/18.png" alt="Canon logo" class="w-6 h-6" />
+        <div class="bg-red-100 p-2 rounded-lg">
+          <img src="/18.png" alt="Canon logo" class="w-6 h-6" />
+        </div>
         <h3 class="text-lg font-semibold text-red-600">Canon – Captation vidéo</h3>
       </div>
       <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4">
@@ -275,6 +326,7 @@ import '../../styles/global.css';
     </div>
   </div>
 </section>
+
 
 <Contact />
 <Footer />
